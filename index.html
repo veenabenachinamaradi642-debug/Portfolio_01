@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena R Benachinamaradi | Python Developer | Data Scientist | Software Engineer</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Professional portfolio of Veena R Benachinamaradi, an Electronics & Communication Engineering graduate seeking opportunities as a Python Developer, Data Analyst, Data Scientist, and Software Engineer. Explore her projects, internships, and technical skills.">
+    <meta name="keywords" content="Veena R Benachinamaradi, Python Developer, Data Analyst, Data Scientist, Software Engineer, Electronics and Communication Graduate, Portfolio, QSpiders, Tecknowgrade, Machine Learning">
+    <meta name="author" content="Veena R Benachinamaradi">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Veena R Benachinamaradi | Tech Portfolio">
+    <meta property="og:description" content="E&C Engineering graduate, Python Developer, and Data Scientist. View my projects and internships.">
+    <meta property="og:image" content="assets/profile.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Floating Navigation Bar -->
+    <header id="floating-navbar">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Veena<span class="logo-dot">.</span>R<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Timeline</a></li>
+                <li><a href="#why-hire" class="nav-link">Why Hire</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light" style="display: none;"></i>
+                </button>
+                <a href="assets/resume.pdf" class="nav-cta-btn" id="nav-resume-btn" download>Resume</a>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-dropdown">
+            <ul class="mobile-links">
+                <li><a href="#hero" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#skills" class="mobile-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#experience" class="mobile-link">Timeline</a></li>
+                <li><a href="#why-hire" class="mobile-link">Why Hire</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+                <li class="mobile-action-row">
+                    <a href="assets/resume.pdf" class="mobile-resume-btn" id="mobile-resume-btn" download>Download Resume</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot animate-pulse"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text font-outfit font-weight-800">Veena R Benachinamaradi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span id="dynamic-role" class="role-highlight">Python Developer</span>
+                </h2>
+                <p class="hero-description">
+                    Electronics & Communication Engineering graduate specializing in Python Full Stack Development, Data Analytics, and Machine Learning. Passionate about transforming raw data into actionable intelligence and building clean, high-performance software applications.
+                </p>
+                <div class="hero-actions">
+                    <a href="assets/resume.pdf" class="btn btn-primary" id="hero-resume-btn" download>
+                        <i data-lucide="download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i data-lucide="mail"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </a>
+                    <a href="mailto:veenabenachinamaradi642@gmail.com" aria-label="Email Me" class="social-icon-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="photo-frame-wrapper">
+                    <div class="glowing-border-ring ring-1"></div>
+                    <div class="glowing-border-ring ring-2"></div>
+                    <div class="photo-frame">
+                        <img id="profile-img" src="assets/profile.png" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'" alt="Veena R Benachinamaradi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-mouse">
+                <span class="scroll-wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Animated Statistics Counter -->
+    <section id="stats" class="stats-section">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="8.7">0.0</span><span class="stat-plus"></span>
+                </div>
+                <p class="stat-label">Engineering CGPA</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Core Internships</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Projects Built</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Hours of Coding</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Journey</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-info">
+                    <h3 class="about-headline">Bridging Electronics & Software Engineering</h3>
+                    <p class="about-text">
+                        I hold a Bachelor's degree in <strong>Electronics & Communication Engineering</strong>, which provided me with a strong foundation in analytical logic, hardware-software integration, and mathematical modeling. Recognizing the power of software, I transitioned into software development and data science, refining my craft through rigorous coursework and practical internships.
+                    </p>
+                    <p class="about-text">
+                        With internships at <strong>Tecknowgrade</strong> (Python Full Stack) and <strong>QSpiders</strong> (Python with Data Science), I have acquired hands-on experience in building web applications, performing data preprocessing pipelines, training machine learning models, and optimizing relational databases.
+                    </p>
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <i data-lucide="graduation-cap" class="highlight-icon"></i>
+                            <div>
+                                <h4>BE in E&C</h4>
+                                <p>Solid analytical & systems foundation</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="briefcase" class="highlight-icon"></i>
+                            <div>
+                                <h4>Python Full Stack</h4>
+                                <p>End-to-end web architectures</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="brain-circuit" class="highlight-icon"></i>
+                            <div>
+                                <h4>Data Science</h4>
+                                <p>Predictive ML & data preprocessing</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="code" class="highlight-icon"></i>
+                            <div>
+                                <h4>Incubated at QSpiders</h4>
+                                <p>Advanced technical & coding training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="card about-journey-card glass">
+                        <h4 class="card-title"><i data-lucide="milestone" class="violet-text"></i> Milestones</h4>
+                        <ul class="journey-bullets">
+                            <li>
+                                <span class="bullet-year">2024</span>
+                                <span class="bullet-desc"><strong>BE Graduate</strong> in Electronics & Communication Engineering (CGPA 8.7)</span>
+                            </li>
+                            <li>
+                                <span class="bullet-year">2024</span>
+                                <span class="bullet-desc"><strong>Python Full Stack Developer Intern</strong> at Tecknowgrade</span>
+                            </li>
+                            <li>
+                                <span class="bullet-year">2025</span>
+                                <span class="bullet-desc">Selected for Incubation & Advanced Training at <strong>QSpiders</strong></span>
+                            </li>
+                            <li>
+                                <span class="bullet-year">2025</span>
+                                <span class="bullet-desc"><strong>Data Science Intern</strong> specializing in ML Models</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Capabilities</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="skills-layout-grid">
+                <!-- Interactive Radar Chart -->
+                <div class="radar-chart-container glass">
+                    <h3 class="chart-title">Skills Overview & Strengths</h3>
+                    <!-- Inline responsive SVG Radar Chart -->
+                    <div class="svg-wrapper">
+                        <svg viewBox="-60 0 520 400" id="radar-chart">
+                            <!-- Background Circles -->
+                            <circle cx="200" cy="200" r="150" class="radar-ring" />
+                            <circle cx="200" cy="200" r="112.5" class="radar-ring" />
+                            <circle cx="200" cy="200" r="75" class="radar-ring" />
+                            <circle cx="200" cy="200" r="37.5" class="radar-ring" />
+                            
+                            <!-- Grid Lines -->
+                            <line x1="200" y1="50" x2="200" y2="350" class="radar-grid-line" />
+                            <line x1="50" y1="200" x2="350" y2="200" class="radar-grid-line" />
+                            <line x1="93.9" y1="93.9" x2="306.1" y2="306.1" class="radar-grid-line" />
+                            <line x1="93.9" y1="306.1" x2="306.1" y2="93.9" class="radar-grid-line" />
+                            
+                            <!-- Polygon representing skills (Dynamic interaction overlay in script.js) -->
+                            <polygon points="200,80 320,150 290,290 110,290 80,150" class="radar-polygon" />
+                            <polygon points="200,80 320,150 290,290 110,290 80,150" class="radar-polygon-glow" />
+                            
+                            <!-- Nodes -->
+                            <circle cx="200" cy="80" r="5" class="radar-node node-python" data-skill="Python" />
+                            <circle cx="320" cy="150" r="5" class="radar-node node-ds" data-skill="Data Science" />
+                            <circle cx="290" cy="290" r="5" class="radar-node node-db" data-skill="SQL & Databases" />
+                            <circle cx="110" cy="290" r="5" class="radar-node node-fe" data-skill="Frontend" />
+                            <circle cx="80" cy="150" r="5" class="radar-node node-ece" data-skill="Electronics / Analytics" />
+                            
+                            <!-- Labels -->
+                            <text x="200" y="30" class="radar-label" text-anchor="middle">Python Development</text>
+                            <text x="340" y="150" class="radar-label" text-anchor="start">Data Science / ML</text>
+                            <text x="310" y="315" class="radar-label" text-anchor="start">SQL & Database</text>
+                            <text x="90" y="315" class="radar-label" text-anchor="end">Frontend (HTML/CSS/JS)</text>
+                            <text x="60" y="150" class="radar-label" text-anchor="end">Electronics & Logic</text>
+                        </svg>
+                    </div>
+                    <p class="chart-caption">Hover over nodes to see proficiency distribution.</p>
+                </div>
+
+                <!-- Skill Categories -->
+                <div class="skills-categories-wrapper">
+                    <!-- Tab Selector -->
+                    <div class="skills-tabs">
+                        <button class="skills-tab-btn active" data-tab="programming">Programming</button>
+                        <button class="skills-tab-btn" data-tab="data-science">Data Science</button>
+                        <button class="skills-tab-btn" data-tab="frontend">Frontend</button>
+                        <button class="skills-tab-btn" data-tab="tools">Tools & Platforms</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="skills-tab-contents">
+                        <!-- Programming -->
+                        <div class="skills-tab-content active" id="programming">
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Python (OOPs, Scripting)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>SQL (Queries, Joins, Schema Design)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-chips-row">
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Data Structures</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Procedural & OOPs</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Relational DBMS</span>
+                            </div>
+                        </div>
+
+                        <!-- Data Science -->
+                        <div class="skills-tab-content" id="data-science">
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Pandas & NumPy</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Data Preprocessing & Cleaning</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Machine Learning (Scikit-Learn)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Data Visualization (Matplotlib, Seaborn)</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 82%"></div></div>
+                            </div>
+                            <div class="skill-chips-row">
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Regression Models</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Classification</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Exploratory Data Analysis (EDA)</span>
+                            </div>
+                        </div>
+
+                        <!-- Frontend -->
+                        <div class="skills-tab-content" id="frontend">
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>HTML5 & Semantic Markup</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>CSS3 & Modern Flexbox/Grid layouts</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Responsive Web Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-chips-row">
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Vanilla JS Interaction</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Glassmorphism styling</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Keyframe animations</span>
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="skills-tab-content" id="tools">
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>VS Code IDE</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Jupyter Notebook & Google Colab</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-wrapper">
+                                <div class="skill-name-row">
+                                    <span>Git & GitHub (Version Control)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-chips-row">
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Git Branching & Merges</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> GitHub repositories</span>
+                                <span class="skill-chip"><i data-lucide="check-circle" class="chip-icon"></i> Command Line Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Creations</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="python-ml">Python & Machine Learning</button>
+                <button class="filter-btn" data-filter="web-ai">Web Apps & AI Assistants</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: House Price Prediction -->
+                <div class="project-card glass" data-category="python-ml">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper purple-glow">
+                            <i data-lucide="trending-up" class="project-icon"></i>
+                        </div>
+                        <div class="project-meta-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Smart House Price Prediction System</h3>
+                        <p class="project-summary">
+                            An analytical tool built to predict real estate market values using regression models. Integrates custom preprocessing pipelines and a metrics dashboard.
+                        </p>
+                        <ul class="project-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Advanced Data Preprocessing Pipeline</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Multi-Algorithm Training & Evaluation</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Interactive Analytics Dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-footer">
+                        <button class="project-action-btn view-details-btn" data-modal="modal-house-pred">
+                            Explore Insights & Pipeline <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Food Delivery App -->
+                <div class="project-card glass" data-category="web-ai">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper cyan-glow">
+                            <i data-lucide="mic" class="project-icon"></i>
+                        </div>
+                        <div class="project-meta-tags">
+                            <span class="tag">Web Apps</span>
+                            <span class="tag">AI / Voice</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Smart Food Delivery with Voice Assistant</h3>
+                        <p class="project-summary">
+                            A voice-activated, intelligent ordering system combining web frontends with voice recognition to streamline user experience and provide recommendations.
+                        </p>
+                        <ul class="project-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Voice-Based Ordering API</li>
+                            <li><i data-lucide="check" class="check-icon"></i> AI-Powered Recommendations</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Real-time Order Tracker Visualizer</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-footer">
+                        <button class="project-action-btn view-details-btn" data-modal="modal-food-delivery">
+                            Explore Interface & Tech <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Projects Details (Interactive Dashboards) -->
+    <!-- Modal 1: House Price Prediction -->
+    <div id="modal-house-pred" class="project-modal">
+        <div class="modal-content glass">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-grid">
+                <div class="modal-left">
+                    <span class="modal-subtitle">Machine Learning & Analytics</span>
+                    <h3 class="modal-title">Smart House Price Prediction</h3>
+                    <div class="modal-description">
+                        <p>
+                            Designed and developed during the Data Science Internship at QSpiders, this project demonstrates end-to-end data pipelines and machine learning implementation in Python. The system removes anomalies, normalizes features, and trains multiple algorithms to select the optimal model.
+                        </p>
+                    </div>
+                    
+                    <h4 class="details-heading">Pipeline Workflow</h4>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-num">1</div>
+                            <div>
+                                <h5>Data Cleaning</h5>
+                                <p>Imputed missing values, handled outliers using IQR and log transforms.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">2</div>
+                            <div>
+                                <h5>Feature Engineering</h5>
+                                <p>One-hot encoded categorical variables; standardized numerical columns using StandardScaler.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">3</div>
+                            <div>
+                                <h5>Model Training</h5>
+                                <p>Trained Linear Regression, Decision Trees, and Random Forest regressors.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">4</div>
+                            <div>
+                                <h5>Evaluation</h5>
+                                <p>Used RMSE and R² Score metrics to compare and pick the best performing model.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-right">
+                    <h4 class="details-heading">Model Performance Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <span class="metric-val">89.4%</span>
+                            <span class="metric-name">R² Score (Random Forest)</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">0.082</span>
+                            <span class="metric-name">RMSE (Log Transformed)</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">20K+</span>
+                            <span class="metric-name">Dataset Size</span>
+                        </div>
+                    </div>
+                    
+                    <h4 class="details-heading">Dataset Exploratory Correlation</h4>
+                    <div class="mock-correlation-matrix">
+                        <div class="corr-title">Key Feature Correlation Heatmap</div>
+                        <div class="heatmap-grid">
+                            <div class="heatmap-cell val-high">Price vs SqFt (0.85)</div>
+                            <div class="heatmap-cell val-med">Price vs Bedrooms (0.52)</div>
+                            <div class="heatmap-cell val-med">Price vs Bathrooms (0.48)</div>
+                            <div class="heatmap-cell val-low">Price vs Age (-0.21)</div>
+                        </div>
+                    </div>
+
+                    <div class="modal-technologies">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-Learn</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Food Delivery App -->
+    <div id="modal-food-delivery" class="project-modal">
+        <div class="modal-content glass">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-grid">
+                <div class="modal-left">
+                    <span class="modal-subtitle">AI-Integrated Web App</span>
+                    <h3 class="modal-title">Smart Food Delivery with Voice Assistant</h3>
+                    <div class="modal-description">
+                        <p>
+                            An application designed to showcase custom frontend interfaces coupled with simulated voice-processing models. Users can search, filter, and add items to a cart simply by speaking commands, making the application accessible and high-tech.
+                        </p>
+                    </div>
+
+                    <h4 class="details-heading">Core System Architecture</h4>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-num"><i data-lucide="mic"></i></div>
+                            <div>
+                                <h5>Voice Parser</h5>
+                                <p>Captures spoken commands and parses keywords (e.g., "order", "pizza", "remove").</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num"><i data-lucide="brain"></i></div>
+                            <div>
+                                <h5>Recommendation Model</h5>
+                                <p>Collaborative filtering suggestions based on order history and top-rated items.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num"><i data-lucide="navigation"></i></div>
+                            <div>
+                                <h5>Real-time Tracker</h5>
+                                <p>Simulates order processing, cooking, and delivery routing states with micro-animations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-right">
+                    <h4 class="details-heading">Simulated System Dashboard</h4>
+                    <div class="system-dashboard-visual">
+                        <div class="console-box">
+                            <div class="console-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="console-title">Voice Recognition Output</span>
+                            </div>
+                            <div class="console-body">
+                                <p class="line-1">&gt; Voice Input Captured: "Add double cheese Margherita pizza and get order status"</p>
+                                <p class="line-2">&gt; Parsing keywords... Found: [Add, Margherita pizza, Status]</p>
+                                <p class="line-3">&gt; Actions: Added Margherita Pizza to cart. Opening order tracking...</p>
+                                <p class="line-4">&gt; System Status: Active, listening for next prompt...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="details-heading">Featured Technologies</h4>
+                    <div class="modal-technologies">
+                        <span>JavaScript (ES6)</span>
+                        <span>Speech Recognition API</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>Python (Backend logic)</span>
+                        <span>SQL (Database)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience & Education timelines Section -->
+    <section id="experience" class="experience-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Background</span>
+                <h2 class="section-title">Timeline & History</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-node"><i data-lucide="briefcase"></i></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2025 (Incubation)</span>
+                        <h3 class="timeline-title">Python with Data Science Intern</h3>
+                        <h4 class="timeline-subtitle">QSpiders</h4>
+                        <p class="timeline-desc">
+                            Completed comprehensive technical training and projects. Developed data preprocessing algorithms, built regression/classification ML models, and trained the Smart House Price Prediction System. Experienced in dataset optimization, SQL queries, and predictive evaluation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Data Science</span>
+                            <span>Machine Learning</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-node"><i data-lucide="briefcase"></i></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2024 (3 Months)</span>
+                        <h3 class="timeline-title">Python Full Stack Development Intern</h3>
+                        <h4 class="timeline-subtitle">Tecknowgrade</h4>
+                        <p class="timeline-desc">
+                            Built and polished responsive web modules using HTML, CSS, JavaScript, and SQL. Developed Python-based backend APIs and handlers, designed data entry schemas, and configured robust local data storage structures.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>HTML & CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL Databases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-node"><i data-lucide="graduation-cap"></i></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2020 - 2024</span>
+                        <h3 class="timeline-title">BE in Electronics & Communication</h3>
+                        <h4 class="timeline-subtitle">Visvesvaraya Technological University</h4>
+                        <p class="timeline-desc">
+                            Graduated with a stellar CGPA of <strong>8.7</strong>. Core modules covered Signals and Systems, Microcontrollers, OOPs using C++, Embedded Architectures, Data Structures, and Applied Mathematics. Developed strong logical debugging and hardware-software diagnostic methodologies.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Signal Processing</span>
+                            <span>Microcontrollers</span>
+                            <span>Embedded Systems</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Milestones</span>
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card glass">
+                    <div class="achievement-icon-wrapper">
+                        <i data-lucide="award" class="achievement-icon"></i>
+                    </div>
+                    <h3>Full Stack Certification</h3>
+                    <p>Successfully completed and certified in Python Full Stack Web Development from Tecknowgrade.</p>
+                </div>
+                <div class="achievement-card glass">
+                    <div class="achievement-icon-wrapper">
+                        <i data-lucide="award" class="achievement-icon"></i>
+                    </div>
+                    <h3>Data Science Specialization</h3>
+                    <p>Successfully certified in Python with Data Science algorithms, handling core libraries like Pandas and Scikit-Learn.</p>
+                </div>
+                <div class="achievement-card glass">
+                    <div class="achievement-icon-wrapper">
+                        <i data-lucide="award" class="achievement-icon"></i>
+                    </div>
+                    <h3>QSpiders Incubation</h3>
+                    <p>Selected for advanced engineering incubation, technical grooming, and testing models at QSpiders.</p>
+                </div>
+                <div class="achievement-card glass">
+                    <div class="achievement-icon-wrapper">
+                        <i data-lucide="award" class="achievement-icon"></i>
+                    </div>
+                    <h3>Industry-Oriented Apps</h3>
+                    <p>Designed and built multiple predictive ML models and voice-integrated applications solving practical flows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why-hire" class="why-hire-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Value Proposition</span>
+                <h2 class="section-title">Why Hire Me</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="why-hire-grid">
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="brain" class="why-icon purple"></i>
+                        <h3>Analytical Thinking</h3>
+                    </div>
+                    <p>Trained in ECE engineering, I dissect complex mathematical and hardware problems into clean, structured algorithmic logic.</p>
+                </div>
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="zap" class="why-icon cyan"></i>
+                        <h3>Quick Learner</h3>
+                    </div>
+                    <p>Swiftly transitioned from hardware engineering to software development, mastering Python, SQL, and ML libraries within months.</p>
+                </div>
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="wrench" class="why-icon pink"></i>
+                        <h3>Problem-Solving</h3>
+                    </div>
+                    <p>Excel in analyzing dataset behaviors, debugging code architecture, and optimizing data processing pipelines.</p>
+                </div>
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="refresh-cw" class="why-icon violet"></i>
+                        <h3>Continuous Growth</h3>
+                    </div>
+                    <p>Actively researching modern advancements in AI models, speech recognition interfaces, and backend caching layers.</p>
+                </div>
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="users" class="why-icon orange"></i>
+                        <h3>Team Collaboration</h3>
+                    </div>
+                    <p>Highly effective collaborator, experienced in agile workflows, version control systems, and collaborative code reviews.</p>
+                </div>
+                <div class="why-card glass">
+                    <div class="why-card-top">
+                        <i data-lucide="cpu" class="why-icon green"></i>
+                        <h3>Tech Adaptability</h3>
+                    </div>
+                    <p>Comfortable adjusting to brand new frameworks, cloud compute spaces (Colab/Jupyter), and databases on demand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies & Interests Section -->
+    <section id="hobbies" class="hobbies-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Life Beyond Code</span>
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card glass">
+                    <div class="hobby-icon-wrapper"><i data-lucide="book-open"></i></div>
+                    <h3>Reading</h3>
+                    <p>Exploring science fiction, technology reviews, and leadership books that expand perspective and critical logic.</p>
+                </div>
+                <div class="hobby-card glass">
+                    <div class="hobby-icon-wrapper"><i data-lucide="compass"></i></div>
+                    <h3>Traveling</h3>
+                    <p>Discovering new cultures, architectures, and natural landscapes. Keeps my mind refreshed and adaptative to changes.</p>
+                </div>
+                <div class="hobby-card glass">
+                    <div class="hobby-icon-wrapper"><i data-lucide="palette"></i></div>
+                    <h3>Drawing</h3>
+                    <p>Sketching illustrations and diagrams. Enhances spatial reasoning, patience, and fine attention to detail.</p>
+                </div>
+                <div class="hobby-card glass">
+                    <div class="hobby-icon-wrapper"><i data-lucide="music"></i></div>
+                    <h3>Music</h3>
+                    <p>Listening to classical fusion and ambient sounds, serving as a perfect backing track to intensive coding blocks.</p>
+                </div>
+                <div class="hobby-card glass">
+                    <div class="hobby-icon-wrapper"><i data-lucide="chef-hat"></i></div>
+                    <h3>Cooking</h3>
+                    <p>Experiencing culinary chemistry. Crafting recipes requires the exact same patience and precise pipeline as code compiling!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future-Ready Technical Blog & Testimonials -->
+    <section id="testimonials" class="testimonials-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Future Roadmap</span>
+                <h2 class="section-title">Insights & Testimonials</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Double-column layout: Left Blog, Right Testimonial -->
+            <div class="roadmap-grid">
+                <!-- Blog Preview -->
+                <div class="blog-preview-container glass">
+                    <h3 class="roadmap-subtitle"><i data-lucide="feather" class="violet-text"></i> Technical Blog (Upcoming)</h3>
+                    <div class="blog-card">
+                        <span class="blog-date">July 2026</span>
+                        <h4>Demystifying Linear Regression Pipelines in Data Science</h4>
+                        <p>A step-by-step deep dive into feature encoding, handling colinearity, and calculating performance metrics using Python.</p>
+                        <span class="read-more-link">Coming Soon <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    <div class="blog-card">
+                        <span class="blog-date">August 2026</span>
+                        <h4>Integrating Speech Recognition API with Python Web Engines</h4>
+                        <p>Exploring how to implement voice command triggers, voice authentication, and recommendation layers in modern web applications.</p>
+                        <span class="read-more-link">Coming Soon <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Testimonials Carousel -->
+                <div class="testimonials-container glass">
+                    <h3 class="roadmap-subtitle"><i data-lucide="message-square" class="cyan-text"></i> Testimonials</h3>
+                    <div class="testimonial-carousel">
+                        <div class="testimonial-slide active">
+                            <i data-lucide="quote" class="quote-icon"></i>
+                            <p class="testimonial-text">
+                                "Veena demonstrated outstanding analytical aptitude during her internship. Her ability to grasp complex data workflows and implement scikit-learn models quickly was impressive."
+                            </p>
+                            <h5 class="testimonial-author">- Senior Intern Supervisor</h5>
+                            <span class="testimonial-company">QSpiders Technical Team</span>
+                        </div>
+                        <div class="testimonial-slide">
+                            <i data-lucide="quote" class="quote-icon"></i>
+                            <p class="testimonial-text">
+                                "A dedicated and detail-oriented team member. Veena built structured full-stack modules and solved code constraints efficiently during her project assignments."
+                            </p>
+                            <h5 class="testimonial-author">- Project Lead</h5>
+                            <span class="testimonial-company">Tecknowgrade Development Team</span>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form with email integration interface -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info-panel glass">
+                    <h3>Let's build something innovative together</h3>
+                    <p>I am seeking full-time roles or project internships as a Python Developer, Data Scientist, Data Analyst, or Software Engineer. Reach out through the form or my social channels!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon-box"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <a href="mailto:veenabenachinamaradi642@gmail.com" class="method-value">veenabenachinamaradi642@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon-box"><i data-lucide="linkedin"></i></div>
+                            <div>
+                                <h5>LinkedIn</h5>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener" class="method-value">Veena R Benachinamaradi</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon-box"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <span class="method-value">Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-panel glass">
+                    <form id="portfolio-contact-form" autocomplete="on">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="input-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="Opportunity Description">
+                        </div>
+                        <div class="input-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" required placeholder="Hi Veena, I'd like to discuss..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            Send Message <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive success notification modal -->
+    <div id="contact-success-modal" class="success-modal">
+        <div class="success-content glass">
+            <div class="success-icon-wrapper"><i data-lucide="check-circle" class="success-check-icon"></i></div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. Veena will get back to you shortly.</p>
+            <button id="success-close-btn" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Resume Download Tracker Banner notification -->
+    <div id="resume-download-banner" class="download-banner glass">
+        <div class="banner-content">
+            <i data-lucide="check-circle" class="green-text"></i>
+            <span>Resume downloaded successfully! Tracker logged recruiter activity.</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>Veena<span class="logo-dot">.</span>R<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Python Developer | Data Analyst | Software Engineer</p>
+            </div>
+            <div class="footer-links-row">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Timeline</a>
+                <a href="assets/resume.pdf" download id="footer-resume-download">Download Resume</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Veena R Benachinamaradi. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    <a href="https://github.com" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
